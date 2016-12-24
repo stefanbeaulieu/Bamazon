@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "mock amazon database to track sales and update product inventory",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "node bamazonCustomer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanbeaulieu/Bamazon.git"
+  },
+  "author": "Stefan Beaulieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefanbeaulieu/Bamazon/issues"
+  },
+  "homepage": "https://github.com/stefanbeaulieu/Bamazon#readme",
+  "dependencies": {
+    "inquirer": "^2.0.0",
+    "mysql": "^2.12.0"
+  }
+}
