@@ -3,27 +3,11 @@ SELECT * FROM bamazon_db.products;
 
 insert INTO products(
 	`item_id`, `product_name`, `department_name`, `price`, `stock_quantity`
-) VALUES (
-	003, 'Mens Tank', 'Mens Clothing', 19.00, 10
-);
-
-insert INTO products(
-	`item_id`, `product_name`, `department_name`, `price`, `stock_quantity`
-) VALUES (
-	004, 'Football', 'Sporting Goods', 28.00, 8
-);
-
-insert INTO products(
-	`item_id`, `product_name`, `department_name`, `price`, `stock_quantity`
-) VALUES (
-	005, 'Crossbow', 'Hunting', 250.00, 4
-);
-
-insert INTO products(
-	`item_id`, `product_name`, `department_name`, `price`, `stock_quantity`
-) VALUES (
-	006, 'Arrows', 'Hunting', 35.00, 35
-);
+) VALUES
+(003, 'Mens Tank', 'Mens Clothing', 19.00, 10),
+(004, 'Football', 'Sporting Goods', 28.00, 8),
+(005, 'Crossbow', 'Hunting', 250.00, 4),
+(006, 'Arrows', 'Hunting', 35.00, 35);
 
 insert INTO products(
 	`item_id`, `product_name`, `department_name`, `price`, `stock_quantity`

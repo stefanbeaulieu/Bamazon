@@ -5,6 +5,7 @@
 
 var mysql = require('mysql');
 var inquirer = require('inquirer');
+var table = require('cli-table');
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -48,6 +49,15 @@ var display = function () {
                             }
                             return isNaN(value) === false;
                         }
+                    }).then(function (answer) {
+                        connection.query("UPDATE products SET ? WHERE ?", [{
+                            stock_quantity: chosenItem.stock_quantity - answer.purchase
+                        }, {
+                            item_id: chosenItem.item_id
+                        }], function(err, res) {
+                            console.log("Order successfully placed!");
+                            console.log("Your total is $" + answer.purchase * chosenItem.price);
+                        });
                     });
                 }
             }
